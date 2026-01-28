@@ -1,0 +1,47 @@
+{
+  "name": "js-test-snapshots",
+  "displayName": "JS Test Snapshots",
+  "description": "Language support for snapshots produced by JS test runners like Vitest and Jest",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.108.1"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "js-test-snapshot",
+        "aliases": [
+          "JS Test Snapshot",
+          "js-test-snapshot"
+        ],
+        "extensions": [
+          ".ctsx.snap",
+          ".cts.snap",
+          ".cjsx.snap",
+          ".cjs.snap",
+          ".mtsx.snap",
+          ".mts.snap",
+          ".mjsx.snap",
+          ".mjs.snap",
+          ".tsx.snap",
+          ".ts.snap",
+          ".jsx.snap",
+          ".js.snap"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "js-test-snapshot",
+        "scopeName": "source.js.snapshot",
+        "path": "./syntaxes/js-test-snapshot.tmLanguage.json"
+      }
+    ]
+  },
+  "repository": "github:stainless-em/vscode-js-test-snapshots",
+  "license": "Apache-2.0 OR MIT"
+}
